@@ -6,14 +6,27 @@
     <ScrollView>
 
         <Grid>
-            
+
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
+
+            <HorizontalStackLayout Grid.Row="0" HorizontalOptions="EndAndExpand">
+                <Label Text="Dodaj listę zakupów" VerticalOptions="Center"/>
+                <ImageButton Source="baseline_add_white_24dp.png" WidthRequest="40" HeightRequest="40" VerticalOptions="Center"/>
+            </HorizontalStackLayout>
+
+
+            <!--<ListView Grid.Row="1">
+                
+            <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell View="{Binding Name}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
             
-            
-            
+            </ListView>-->
             
         </Grid>
 
