@@ -14,11 +14,12 @@
 
             <HorizontalStackLayout Grid.Row="0" HorizontalOptions="EndAndExpand">
                 <Label Text="Dodaj listę zakupów" VerticalOptions="Center"/>
-                <ImageButton Source="baseline_add_white_24dp.png" WidthRequest="40" HeightRequest="40" VerticalOptions="Center"/>
+                <ImageButton Source="baseline_add_white_24dp.png" WidthRequest="40" HeightRequest="40" VerticalOptions="Center"
+                             Command="{Binding OpenAddShoppingListViewCommand}"/>
             </HorizontalStackLayout>
 
 
-            <!--<ListView Grid.Row="1">
+            <ListView Grid.Row="1">
                 
             <ListView.ItemTemplate>
                     <DataTemplate>
@@ -26,7 +27,7 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             
-            </ListView>-->
+            </ListView>
             
         </Grid>
 

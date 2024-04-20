@@ -4,9 +4,20 @@
              x:Class="AppMVVM.Views.NavigationView"
              xmlns:views="clr-namespace:AppMVVM.Views">
 
-
-    <views:HomeView Title="Strona Domowa"/>
-    <views:ShoppingListView Title="Lista Zakupów"/>
-    <views:SettingsView Title="Ustawienia"/>
+    <NavigationPage Title="Strona Domowa">
+        <x:Arguments>
+            <views:HomeView />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Lista Zakupów">
+        <x:Arguments>
+            <views:ShoppingListView />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Ustawienia">
+        <x:Arguments>
+            <views:SettingsView />
+        </x:Arguments>
+    </NavigationPage>
 
 </TabbedPage>

@@ -27,6 +27,10 @@ namespace AppMVVM.Models
             await seeder.SeedAsync().ConfigureAwait(false);
         }
 
-        
+        public async Task<ShoppingList> AddShoppingList(ShoppingList shoppingList)
+        {
+            await _connection.InsertAsync(shoppingList);
+            return shoppingList;
+        }
     }
 }

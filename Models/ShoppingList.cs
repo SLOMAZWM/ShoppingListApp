@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SQLite;
+using System.Collections.ObjectModel;
 
 namespace AppMVVM.Models
 {
@@ -19,7 +20,7 @@ namespace AppMVVM.Models
         public string Status { get; set; } = "Nowa Lista";
 
         [Ignore]
-        public List<Item>? Items { get; set; }
+        public ObservableCollection<Item>? Items { get; set; }
 
         public int ShoppingListId { get; set; }
     }
