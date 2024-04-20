@@ -14,14 +14,17 @@ namespace AppMVVM.Models
         public LocalDbServer(string dbPath)
         {
             _connection = new SQLiteAsyncConnection(dbPath);
-            InitializeDatabase();
+            InitializeDatabase().ConfigureAwait(false);
         }
 
-        private async void InitializeDatabase()
+        private async Task InitializeDatabase()
         {
             await _connection.CreateTableAsync<Category>();
             await _connection.CreateTableAsync<Item>();
             await _connection.CreateTableAsync<ShoppingList>();
+
+            var seeder = new DatabaseSeeder(_connection);
+            await seeder.SeedAsync().ConfigureAwait(false);
         }
 
         

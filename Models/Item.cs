@@ -3,28 +3,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.ComponentModel.DataAnnotations;
+using SQLite;
 
 namespace AppMVVM.Models
 {
     public class Item
     {
-        
+        [PrimaryKey, AutoIncrement]
         public int ItemId { get; set; }
 
-        
+        [MaxLength(100)]
         public string? Name { get; set; }
-
+        [MaxLength(250)]
         public string? Description { get; set; }
 
-        
         public decimal Price { get; set; }
 
         public string? Image { get; set; }
 
-        
-        public Category? CategoryOfItem { get; set; }
+        public int CategoryId { get; set; }
 
-        
+        [Ignore]
+        public Category? CategoryOfItem { get; set; }
     }
 }

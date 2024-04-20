@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 using AppMVVM.Views;
+using AppMVVM.Models;
 using SQLitePCL;
 
 namespace AppMVVM

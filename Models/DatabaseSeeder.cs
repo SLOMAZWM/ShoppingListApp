@@ -49,11 +49,6 @@ namespace AppMVVM.Models
                     new Category { Name = "Artykuły dla dzieci" },
                 };
             }
-
-            if (await _connection.Table<Item>().CountAsync() == 0)
-            {
-
-            }
         }
     }
 }
