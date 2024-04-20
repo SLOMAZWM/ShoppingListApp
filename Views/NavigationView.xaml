@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMVVM.Views.NavigationView"
+             xmlns:views="clr-namespace:AppMVVM.Views">
+
+
+    <views:HomeView Title="Strona Domowa"/>
+    <views:ShoppingListView Title="Lista Zakupów"/>
+    <views:SettingsView Title="Ustawienia"/>
+
+</TabbedPage>

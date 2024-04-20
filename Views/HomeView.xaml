@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMVVM.Views.HomeView"
+             Title="HomeView">
+    <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="20">
+        <Label Text="Witamy w aplikacji zarządzania listą zakupów!" HorizontalOptions="Center"/>
+        <Label Text="Zachęcamy do dzielenia się opinią w sklepie android!" HorizontalOptions="Center"/>
+    </VerticalStackLayout>
+</ContentPage>
